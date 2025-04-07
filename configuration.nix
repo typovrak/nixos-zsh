@@ -8,11 +8,11 @@ in {
 	system.activationScripts.zsh = ''
 		touch ${home}/.zshrc
 		chown ${username}:${group} ${home}/.zshrc
-		chmod 644 ${home}/.zshrc
+		chmod 600 ${home}/.zshrc
 
 		touch ${home}/.zsh_history
 		chown ${username}:${group} ${home}/.zsh_history
-		chmod 644 ${home}/.zsh_history
+		chmod 600 ${home}/.zsh_history
 	'';
 
 	users.users.${username} = {
