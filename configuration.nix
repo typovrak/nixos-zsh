@@ -6,11 +6,11 @@ let
 	home = config.users.users.${username}.home;
 in {
 	system.activationScripts.zsh = ''
-		touch ${home}/.zshrc
+		cp ${./zshrc} ${home}/.zshrc
 		chown ${username}:${group} ${home}/.zshrc
 		chmod 600 ${home}/.zshrc
 
-		touch ${home}/.zsh_history
+		cp ${./zsh_history} ${home}/.zsh_history
 		chown ${username}:${group} ${home}/.zsh_history
 		chmod 600 ${home}/.zsh_history
 	'';

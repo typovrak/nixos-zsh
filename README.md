@@ -5,5 +5,4 @@ nixos-zsh = fetchGit {
 	ref = "main";
 };
 
-
 (import "${nixos-zsh}/configuration.nix")
