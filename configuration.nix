@@ -10,7 +10,7 @@ in {
 		chown ${username}:${group} ${home}/.zshrc
 		chmod 600 ${home}/.zshrc
 
-		cp ${./.zsh_history} ${home}/.zsh_history
+		touch ${home}/.zsh_history
 		chown ${username}:${group} ${home}/.zsh_history
 		chmod 600 ${home}/.zsh_history
 	'';
