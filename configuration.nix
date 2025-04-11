@@ -52,6 +52,8 @@ in {
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/mscholz_dev_github &>/dev/null
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/mscholz_dev_gitlab &>/dev/null
 
+			export EDITOR=nvim
+
 			${pkgs.fastfetch}/bin/fastfetch
 		'';
 	};
