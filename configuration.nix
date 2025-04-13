@@ -26,7 +26,7 @@ in {
 		starship
 		openssh
 		vim
-		nvim
+		neovim
 		eza
 		fastfetch
 	];
