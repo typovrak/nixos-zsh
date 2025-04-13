@@ -25,7 +25,6 @@ in {
 		zsh-syntax-highlighting
 		starship
 		openssh
-		vi
 		vim
 		nvim
 		eza
