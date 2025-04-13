@@ -25,6 +25,10 @@ in {
 		zsh-syntax-highlighting
 		starship
 		openssh
+		vi
+		vim
+		nvim
+		eza
 		fastfetch
 	];
 
@@ -53,6 +57,12 @@ in {
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/mscholz_dev_gitlab &>/dev/null
 
 			export EDITOR=nvim
+			
+			alias v=nvim
+			alias vi=nvim
+			alias vim=nvim
+			
+			alias ls="eza -l --icons"
 
 			${pkgs.fastfetch}/bin/fastfetch
 		'';
