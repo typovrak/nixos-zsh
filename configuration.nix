@@ -29,6 +29,7 @@ in {
 		neovim
 		eza
 		fastfetch
+		pnpm
 	];
 
 	services.openssh.enable = true;
@@ -54,6 +55,12 @@ in {
 
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/mscholz_dev_github &>/dev/null
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/mscholz_dev_gitlab &>/dev/null
+
+			export PNPM_HOME="/home/typovrak/.local/share/pnpm"
+			case ":$PATH:" in
+  				*":$PNPM_HOME:"*) ;;
+  				*) export PATH="$PNPM_HOME:$PATH" ;;
+			esac
 
 			export EDITOR=nvim
 			
