@@ -49,7 +49,6 @@ in {
 				eval "$(${pkgs.openssh}/bin/ssh-agent -s)" &>/dev/null
 			fi
 
-
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/typovrak_github &>/dev/null
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/typovrak_gitlab &>/dev/null
 
