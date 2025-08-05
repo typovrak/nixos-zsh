@@ -57,6 +57,8 @@ in {
 
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/revres &>/dev/null
 
+			${pkgs.openssh}/bin/ssh-add ~/.ssh/morgan-scholz-comet-data &>/dev/null
+
 			export PNPM_HOME="/home/typovrak/.local/share/pnpm"
 			case ":$PATH:" in
   				*":$PNPM_HOME:"*) ;;
