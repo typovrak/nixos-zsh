@@ -30,6 +30,7 @@ in {
 		eza
 		fastfetch
 		pnpm
+		pipx
 	];
 
 	services.openssh.enable = true;
@@ -64,6 +65,8 @@ in {
   				*":$PNPM_HOME:"*) ;;
   				*) export PATH="$PNPM_HOME:$PATH" ;;
 			esac
+
+			export PATH="$PATH:/home/typovrak/.local/bin"
 
 			export EDITOR=nvim
 			
