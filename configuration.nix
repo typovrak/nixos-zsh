@@ -76,6 +76,8 @@ in {
 			
 			alias ls="eza -l --icons"
 
+			alias gittype="nix run github:unhappychoice/gittype"
+
 			${pkgs.fastfetch}/bin/fastfetch
 		'';
 	};
