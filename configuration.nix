@@ -51,13 +51,8 @@ in {
 			fi
 
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/typovrak_github &>/dev/null
-			${pkgs.openssh}/bin/ssh-add ~/.ssh/typovrak_gitlab &>/dev/null
-
-			${pkgs.openssh}/bin/ssh-add ~/.ssh/mscholz_dev_github &>/dev/null
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/mscholz_dev_gitlab &>/dev/null
-
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/revres &>/dev/null
-
 			${pkgs.openssh}/bin/ssh-add ~/.ssh/morgan-scholz-comet-data &>/dev/null
 
 			export PNPM_HOME="/home/typovrak/.local/share/pnpm"
