@@ -30,7 +30,6 @@ in {
 		eza
 		fastfetch
 		pnpm
-		pipx
 	];
 
 	services.openssh.enable = true;
